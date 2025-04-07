@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style02.css">
+</head>
+
+
+
+<body>
+    <section class="sec1">
+
+    <div id="div1">
+        <img id="sticker1" src="./assets/img/leosticker.png" alt="leopardo">
+        <input id="input1" type="text">
+    </div>
+
+
+    <div id="div2">
+        <img id="sticker2" src="./assets/img/gacela.jpg" alt="leopardo">
+        <input id="input2" type="text">
+       
+    </div>
+
+    <div id="div3">
+        <img id="sticker3" src="./assets/img/jirafa.jpg" alt="leopardo">
+        <input id="input3" type="text">
+    </div>
+</section>
+<section>
+<p id="parrafo"> <span id="resultado"></span>
+</p>
+<button onclick="
+input1=Number(document.querySelector('#input1').value)
+input2=Number(document.querySelector('#input2').value)
+input3=Number(document.querySelector('#input3').value)
+sumaInput=  input1+input2+input3
+resultado=document.querySelector('#resultado')
+if(sumaInput>10){
+    resultado.innerHTML='llevas demasiados stickers'
+}else {
+resultado.innerHTML='llevas suficientes stickers'
+}
+
+
+"
+>Verificar</button>
+
+
+
+ 
+<script src="./assets/js/script02.js"></script>
+</body>
+
+</html>
